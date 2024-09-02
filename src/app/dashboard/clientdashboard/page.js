@@ -18,7 +18,7 @@ export default function ClientDashboard() {
             <div className="space-x-6">
               <a href="/" className="hover:text-gray-700">Home</a>
               <a href="/category" className="hover:text-gray-700">Category</a>
-              <a href="#about" className="hover:text-gray-700">About Us</a>
+              <a href="../about-us" className="hover:text-gray-700">About Us</a>
             </div>
             <div className="flex items-center space-x-4">
               <a href="/profile" className="hover:text-gray-700">Profile</a>
