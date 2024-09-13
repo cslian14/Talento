@@ -25,7 +25,7 @@
                 <a href="#" className="flex items-center space-x-2 p-2 rounded hover:bg-gray-700">
                     <span>Booking</span>
                 </a>
-                <a href="#" className="flex items-center space-x-2 p-2 rounded hover:bg-gray-700">
+                <a href="/" className="flex items-center space-x-2 p-2 rounded hover:bg-gray-700">
                     <span>Log Out</span>
                 </a>
                 </nav>

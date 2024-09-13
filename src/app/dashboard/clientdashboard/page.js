@@ -22,7 +22,7 @@ export default function ClientDashboard() {
             </div>
             <div className="flex items-center space-x-4">
               <a href="/profile" className="hover:text-gray-700">Profile</a>
-              <a href="/authentication/login" className="hover:text-gray-700">Login</a>
+              <a href="/" className="hover:text-gray-700">Logout</a>
             </div>
           </div>
         </nav>
