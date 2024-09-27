@@ -9,6 +9,7 @@ export default function Login() {
       </Head>
       <div className="flex items-center justify-center min-h-screen bg-gray-100">
         <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-sm">
+          <img src="/logotalentos.png" height={80} width={80} className='flex-auto ml-28'></img>
           <h1 className="text-2xl font-bold mb-6 text-center">Welcome Back!</h1>
           <form>
             <label className="block text-sm font-medium text-gray-700 mb-2">Email address</label>
@@ -32,12 +33,12 @@ export default function Login() {
                 <input type="checkbox" className="mr-2" />
                 Remember me
               </label>
-              <Link href="#" className="text-sm text-indigo-600 hover:underline">
+              <Link href="/" className="text-sm text-indigo-600 hover:underline">
                 Forgot Password?
               </Link>
             </div>
 
-            <Link href="/dashboard" passHref>
+            <Link href="/dashboard/clientdashboard" passHref>
               <button
                 type="button"
                 className="w-full py-2 px-4 bg-indigo-800 text-white font-semibold rounded-md hover:bg-indigo-700"

@@ -1,11 +1,10 @@
-"use client"; // Ensure this is a Client Component
-
+"use client";
 import Head from 'next/head';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 export default function Register() {
-  const [role, setRole] = useState(''); // kung unsay imo ge select na role sa pag register
+  const [role, setRole] = useState('');
   const router = useRouter();
 
   const handleSubmit = (event) => {
@@ -27,6 +26,7 @@ export default function Register() {
       </Head>
       <div className="flex items-center justify-center min-h-screen bg-gray-100">
         <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        <img src="/logotalentos.png" height={80} width={80} className='flex-auto ml-36'></img>
           <h1 className="text-2xl font-bold mb-6 text-center">Create an Account</h1>
           <form onSubmit={handleSubmit}>
             <input

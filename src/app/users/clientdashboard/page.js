@@ -1,5 +1,4 @@
-"use client"; // Ensure this is a Client Component
-
+"use client"; 
 import Head from 'next/head';
 
 export default function ClientDashboard() {
@@ -26,8 +25,6 @@ export default function ClientDashboard() {
             </div>
           </div>
         </nav>
-
-        {/* Booking Section */}
         <section className="bg-gray-800 text-white py-16">
           <div className="container mx-auto text-center">
             <h1 className="text-4xl font-bold mb-6">Book a Talent for your Event!</h1>
@@ -42,8 +39,6 @@ export default function ClientDashboard() {
             </div>
           </div>
         </section>
-
-        {/* Category Section */}
         <section className="container mx-auto py-16">
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-xl font-bold">Browse By Category</h2>
@@ -75,8 +70,6 @@ export default function ClientDashboard() {
             </ul>
           </div>
         </section>
-
-        {/* About Section */}
         <section id="about" className="bg-gray-200 py-16">
           <div className="container mx-auto flex items-center">
             <div className="w-1/2 pr-8">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography, Grid, Avatar, Box, Paper } from '@mui/material';
+import { Container, Typography, Grid, Avatar, Box, Paper, } from '@mui/material';
 
 const teamMembers = [
   {
@@ -37,15 +37,28 @@ const teamMembers = [
 const AboutUs = () => {
   return (
     <Container maxWidth="lg" sx={{ mt: 8, mb: 8 }}>
-      {/* Heading */}
-      <Typography variant="h3" align="center" gutterBottom>
+      <div className='bg-gray-800 mb-10 mt-10'>
+      <div className="flex justify-center items-center h-full">
+        <a href="/dashboard/clientdashboard">
+          <img src="logotalentos.png" className="items-center" height={100} width={100} />
+        </a>
+      </div>
+      <Typography variant="h3" color="white" align="center" gutterBottom>
         About Us
       </Typography>
-      <Typography variant="h6" align="center" color="textSecondary" paragraph>
+      <Typography variant="h6" align="center" color="white" >
         We are a team of passionate individuals dedicated to delivering the best talent and performance for your events.
       </Typography>
-
-      {/* Team Section */}
+      <Box sx={{ mt: 10 }}>
+        <Typography variant="h4" align="center" color="white" gutterBottom>
+          Our Mission
+        </Typography>
+        <Typography variant="body1" align="center" color="white" >
+          Our mission is to help event organizers or individuals to find the suitable talent for their specific events. 
+          Also we want to help talents to be discovered and perform their talents to earn money.  
+        </Typography>
+      </Box>
+      </div>
       <Box sx={{ mt: 5 }}>
         <Typography variant="h4" align="center" gutterBottom>
           Meet Our Team
@@ -53,7 +66,7 @@ const AboutUs = () => {
         <Grid container spacing={4}>
           {teamMembers.map((member, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
-              <Paper elevation={3} sx={{ p: 2, textAlign: 'center' }}>
+              <Paper elevation={3} sx={{ p: 2, textAlign: 'center' }} className="bg-yellow-200">
                 <Avatar
                   src={member.avatarUrl}
                   alt={member.name}
@@ -70,17 +83,6 @@ const AboutUs = () => {
             </Grid>
           ))}
         </Grid>
-      </Box>
-
-      {/* Our Mission Section */}
-      <Box sx={{ mt: 10 }}>
-        <Typography variant="h4" align="center" gutterBottom>
-          Our Mission
-        </Typography>
-        <Typography variant="body1" align="center" color="textSecondary" paragraph>
-          Our mission is to help event organizers or individuals to find the suitable talent for their specific events. 
-          Also we want to help talents to be discovered and perform their talents to earn money.  
-        </Typography>
       </Box>
     </Container>
   );

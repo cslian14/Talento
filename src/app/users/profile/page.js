@@ -6,16 +6,6 @@ import { Avatar } from '@mui/material';
 const Profile = () => {
   return (
     <div className="flex flex-col lg:flex-row p-4">
-      <div className="bg-gray-800 text-white p-6 w-full lg:w-1/4 h-full">
-        <h2 className="text-2xl font-bold mb-6">TALENTO</h2>
-        <ul className="space-y-4">
-          <li className="hover:text-gray-400">Dashboard</li>
-          <li className="hover:text-gray-400">Portfolio</li>
-          <li className="hover:text-gray-400">Messages</li>
-          <li className="hover:text-gray-400">Booking</li>
-          <li className="hover:text-gray-400">Log Out</li>
-        </ul>
-      </div>
       <div className="flex-1 p-6">
         <div className="relative h-64 bg-cover bg-center rounded-lg" style={{ backgroundImage: 'url(/kris.jpg)' }}>
           <div className="absolute bottom-4 left-4 flex items-center space-x-4">
@@ -28,11 +18,6 @@ const Profile = () => {
               <p className='bg-white-200 text-black'>4.9/5 (26 reviews)</p>
             </div>
           </div>
-        </div>
-
-        <div className="mt-6 flex justify-end space-x-4">
-          <Button variant="contained" color="primary">Edit</Button>
-          <Button variant="outlined" color="primary">Post Photo/Video</Button>
         </div>
 
         <div className="mt-6 border-b">
