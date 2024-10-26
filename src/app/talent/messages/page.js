@@ -33,6 +33,7 @@ const ChatPage = () => {
           {[
             { text: "Dashboard", path: "./dashboard" },
             { text: "Portfolio", path: "./portfolio" },
+            { text: "Posts", path: "./posts" },
             { text: "Messages", path: "./messages" },
             { text: "Bookings", path: "./bookings" },
             { text: "Log Out", path: "/" },

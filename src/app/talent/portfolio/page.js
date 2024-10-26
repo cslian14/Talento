@@ -39,6 +39,7 @@ const PortfolioPage = () => {
           {[
             { text: "Dashboard", path: "./dashboard" },
             { text: "Portfolio", path: "./portfolio" },
+            { text: "Posts", path: "./posts" },
             { text: "Messages", path: "./messages" },
             { text: "Booking", path: "./bookings" },
             { text: "Log Out", path: "/" },

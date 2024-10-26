@@ -38,7 +38,7 @@ export default function Login() {
               </Link>
             </div>
 
-            <Link href="/dashboard/clientdashboard" passHref>
+            <Link href="/users/clientdashboard" passHref>
               <button
                 type="button"
                 className="w-full py-2 px-4 bg-indigo-800 text-white font-semibold rounded-md hover:bg-indigo-700"
